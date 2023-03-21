@@ -62,7 +62,7 @@ https://www.youtube.com/watch?v=eKKEa6NhCd0
 </div>
 
 
-#### 4. Django版本按照Railway提供的官方範本，必須有資料庫Database？所以以上設定完還是會有問題。請新增一個Postgresql服務
+#### 4. Django版本按照Railway提供的官方範本，必須有資料庫Database？所以以上設定完還是會有問題。請新增一個PostgreSQL服務。
 
 <div align="center">
   <img src="demo/demo_dj1.png" width="600"/>
