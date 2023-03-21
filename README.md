@@ -61,5 +61,24 @@ https://www.youtube.com/watch?v=eKKEa6NhCd0
   <img src="demo/demo5r.png" width="600"/>
 </div>
 
+
+#### 4. Django版本按照Railway提供的官方範本，必須有資料庫Database？所以以上設定完還是會有問題。請新增一個Postgresql服務
+
+<div align="center">
+  <img src="demo/demo_dj1.png" width="600"/>
+</div>
+<div align="center">
+  <img src="demo/demo_dj2.png" width="600"/>
+</div>
+
+#### 5. Variables必須新增圖中另外8個項目。
+
+<div align="center">
+  <img src="demo/demo_dj3.png" width="600"/>
+</div>
+
+#### 6. 自動重新佈署後就能運作。但由於使用了兩個服務，會多消耗執行時間，若無特殊需求，建議使用Flask版本即可。
+
+
 ------
 ### Line和openai api設置請參考： https://github.com/howarder3/GPT-Linebot-python-flask-on-vercel
