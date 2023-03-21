@@ -1,5 +1,5 @@
 # Django-ChatGPT3.5-linebot-Raiway
-# 一個使用Django框架和GPT3.5 turbo/ChatGPT，創造linebot的專案，快速建置於平台Raiway。
+# 一個使用Django框架和GPT3.5 turbo/ChatGPT，創造linebot的專案，快速建置於平台Railway。
 
 
 <div align="center">
@@ -15,17 +15,51 @@
 
 
 
-### 1. 本專案參考了以下前輩和官方的方案改成製作，只針對剛學習Python或Django的朋友來佈置linebot在Vercel上。Raiway可取代取消免費方案的Heroku，來測試Side Project。
 
-https://github.com/howarder3/GPT-Linebot-python-flask-on-vercel<br><br>
-https://github.com/vercel/examples/tree/main/python/django
+#### GPT3 TelegramBot Vercel部署版本。程式猿影音教學參考。請支持且訂閱加按讚感謝他的辛勞。
+
+https://www.youtube.com/watch?v=eKKEa6NhCd0
+
+<div align="center">
+  <img src="demo/demo0.png" width="800"/>
+</div>
 
 
-### 2. 本以為只要把Flask的部分改為Django部分即可，但花了兩天，遇到了許多坑。主要就是因為使用Django會超過Vercel Function的50MB限制，嘗試了許多版本終於成功。
+#### 0. Railway提供免費Starter Plan，每個月有5美元或500小時執行時間的免費額度。所以一個月大概可以用20天上下。不用時請刪掉專案。只要存活著就會計算時間。據官方網站說，服務不會沉睡。
+<div align="center">
+  <img src="demo/railway0.png" width="600"/>
+</div>
 
 
-### 3. 主要就是裝了openapi的依賴後容量會大增。故在這版本我們只使用Django 2.0版本減少容量。我試過Django 3.2以上版本會Build失敗。若沒有其他特別需求，建議使用Django 2.0版本即可。也歡迎測試其他版本。
+#### 1. 註冊Railway帳號後，開啟新專案New Project，匯入import已經fork過來的本專案。
+<div align="center">
+  <img src="demo/demo0r.png" width="300"/>
+</div>
 
-### 4. openai的依賴必須使用0.27.0以上版本。
+<div align="center">
+  <img src="demo/demo1r.png" width="600"/>
+</div>
+
+
+#### 2. 必須在專案的Variables設定3個環境變數，分別是OPENAI_API_KEY和LINE_CHANNEL_SECRET和LINE_CHANNEL_ACCESS_TOKEN。部署成功後，會出現網址，請到LINE developer網頁設定Webhook URL。
+例如：https://xxxxx.railway.app/callback
+
+
+<div align="center">
+  <img src="demo/demo2r.png" width="600"/>
+</div>
+<div align="center">
+  <img src="demo/demo3r.png" width="600"/>
+</div>
+<div align="center">
+  <img src="demo/demo4r.png" width="600"/>
+</div>
+
+#### 3. 若沒有出現網址，請到settings裡的Domains做設定，按下generate domain按鈕即可。
+
+<div align="center">
+  <img src="demo/demo5r.png" width="600"/>
+</div>
+
 ------
 ### Line和openai api設置請參考： https://github.com/howarder3/GPT-Linebot-python-flask-on-vercel
